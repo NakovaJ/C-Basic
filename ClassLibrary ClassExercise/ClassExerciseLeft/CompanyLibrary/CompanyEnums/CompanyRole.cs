@@ -8,6 +8,8 @@ namespace CompanyLibrary.CompanyEnums
     {
         Sales,
         Manager,
-        Other
+        Other,
+        Contractor,
+        CEO
     }
 }
