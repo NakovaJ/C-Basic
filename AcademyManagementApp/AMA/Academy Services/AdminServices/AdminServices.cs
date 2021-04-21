@@ -10,7 +10,7 @@ namespace Academy_Services.AdminServices
 {
     public class AdminServices
     {
-        //Admin Login Part
+        #region Display Login For Admins
         public static Admin DiplayLoginForAdmin(List<Member> allUsers)
         {
             for (; ; )
@@ -52,22 +52,11 @@ namespace Academy_Services.AdminServices
 
             }
         }
+        #endregion
 
-        //Admin base menu
-        public static void AdminDisplayMenu(Admin adminLogged)
-        {
-            Console.Clear();
-            Console.WriteLine();
-            Console.WriteLine($"{adminLogged.FirstName} you have successfully logged in!");
-            Console.WriteLine();
-            Console.WriteLine("Enter 1 ---------> to display users!");
-            Console.WriteLine("Enter 2 ---------> to display subjects!");
-            Console.WriteLine("Enter 3 ---------> to register new user!");
-            Console.WriteLine("Enter 4 ---------> to remove existing user!");
-            Console.WriteLine("Enter x ---------> to log out of the Academy Management App");
-        }
 
-        //Displaying users/admins/trainers/student
+        #region Display For Users
+
         public static void DisplayUsers(List<Member> allUsers)
         {
             while (true)
@@ -102,7 +91,9 @@ namespace Academy_Services.AdminServices
             }
 
         }
+        #endregion
 
+        #region Display All Users
         public static void DisplayAllUsers(List<Member> allUsers)
         {
             while (true)
@@ -135,7 +126,9 @@ namespace Academy_Services.AdminServices
             }
 
         }
+        #endregion
 
+        #region Display All Students
         public static void DisplayAllStudents(List<Member> allUsers)
         {
             while (true)
@@ -172,7 +165,9 @@ namespace Academy_Services.AdminServices
 
         }
 
+        #endregion
 
+        #region Display All Trainers
         public static void DisplayAllTrainers(List<Member> allUsers)
         {
             while (true)
@@ -208,7 +203,9 @@ namespace Academy_Services.AdminServices
 
         }
 
+        #endregion
 
+        #region Display All Admins
         public static void DisplayAllAdmins(List<Member> allUsers)
         {
             while (true)
@@ -243,8 +240,9 @@ namespace Academy_Services.AdminServices
             }
         }
 
+        #endregion
 
-        //Displaying all subjects on the academy
+        #region Display Subjects
         public static void DisplaySubjects(List<Member> allUsers) {
             while (true)
             {
@@ -293,9 +291,9 @@ namespace Academy_Services.AdminServices
            
 
         }
-        //Remove user from app
+        #endregion
 
-        //Display for removing
+        #region Display For Removing Users
         public static void DisplayForRemovigUsers(List<Member> allUsers,Admin adminLogged)
         {
             while (true)
@@ -330,9 +328,9 @@ namespace Academy_Services.AdminServices
             }
 
         }
+        #endregion
 
-       
-
+        #region Display Users To Remove
         public static void DisplayUsersToRemove(List<Member> allUsers)
         {
             while (true)
@@ -374,7 +372,9 @@ namespace Academy_Services.AdminServices
             }
 
         }
+        #endregion
 
+        #region Display Students To Remove
         public static void DisplayStudentsToRemove(List<Member> allUsers)
         {
             while (true)
@@ -426,7 +426,10 @@ namespace Academy_Services.AdminServices
 
 
         }
+        #endregion
 
+
+        #region Display Trainers To Remove
         public static void DisplayTrainersToRemove(List<Member> allUsers)
         {
             while (true)
@@ -478,7 +481,9 @@ namespace Academy_Services.AdminServices
             }
 
         }
+#endregion
 
+        #region Display Admins To Remove
         public static void DisplayAdminsToRemove(List<Member> allUsers,Admin adminLogged)
         {
             while (true)
@@ -537,8 +542,10 @@ namespace Academy_Services.AdminServices
 
             }
         }
+        #endregion
 
-        //Adding new user
+        #region Add New User
+
         public static void AddNewUser(List<Member>allUsers)
         {
             while (true)
@@ -567,6 +574,8 @@ namespace Academy_Services.AdminServices
                 }
             }
         }
+#endregion
+
         #region Adding New Student
         public static void AddNewStudent(List<Member> allusers)
         {
@@ -911,7 +920,6 @@ namespace Academy_Services.AdminServices
         }
 
         #endregion
-
 
         #region Method for creating new Trainer
 
